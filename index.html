@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <p>Rendszáma <input type="text" id="rendszama"></p>
 <p><select name="" id="valaszt"> 
-    <option value="1" id="dizel">Dízel</option>
-    <option value="2" id="benzin">Benzin</option>
+    <option value="1" id="benzin">benzin</option>
+    <option value="2" id="dizel">dizel</option>
     <option value="3" id="elektromos">Elektromos</option>                                                                                                                                                              " id="elektromos">Elektromos</option>
 </select>
 </p>
@@ -22,10 +23,28 @@
 <input type="radio" id="5ajto" name="ajtok" value="oto">
 <label for="5ajto">5ajto</label>
 <p>
-<button onclick="Tárol()">Tárol</button> <button>Statisztika</button>
+<button onclick="Tárol()">Tárol</button> <button onclick="stat()">Statisztika</button>
 </p>
 
+<table>
+<tr>
+    <td rowspan="2">üzemenanyag szerint</td>
+    <td colspan="2">Benzin</td>
+    <td colspan="2">Dizel</td>
+    <td colspan="2">Elektromos</td>
+</tr>
+<tr>
+    <td colspan="2">0</td>
+    <td colspan="2">0</td>
+    <td colspan="2">0</td>
+</tr>
+<tr>
+    <td>Első tulajdonosok Százalékos aránya</td> 
+    <td colspan="3">ads</td>
+    <td colspan="3">ads</td>
+</tr>
 
+</table>
 </body>
 </html>
 

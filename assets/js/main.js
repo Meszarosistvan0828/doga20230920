@@ -6,19 +6,7 @@ function Tárol()
     var dizel = 0
     var benzin = 0
     var elektromos = 0
-    if(document.getElementById("valaszt").value = 1)
-    {
-        dizel+=1
-    }
-    if(document.getElementById("valaszt").value = 2)
-    {
-      benzin+=1
-    }  
-    if(document.getElementById("valaszt").value = 3)
-    {
-       elektromos+=1
-    }
-    
+ 
     var haromajtos = 0
     var otajtos = 0
     if(document.getElementById("3ajto").checked)
@@ -39,15 +27,20 @@ function Tárol()
     var obj = [
         {
             rendszam : rendszam,
-            dizel : dizel,
-            benzin : benzin,
-            elektromos : elektromos,
+            típus : document.getElementById("valaszt").value,
             elsotulaj : elsotulaj,
             haromajtos : haromajtos,
             otajtos : otajtos,
         }
     ]
-    tomb.push(obj)
+
+tomb.push(obj)
 console.log(tomb)
 
+}
+
+
+function stat()
+{
+    
 }
