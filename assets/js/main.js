@@ -3,9 +3,7 @@ var tomb = []
 function Tárol()
 {
     var rendszam = document.getElementById("rendszama").value 
-    var dizel = 0
-    var benzin = 0
-    var elektromos = 0
+
  
     var haromajtos = 0
     var otajtos = 0
@@ -42,5 +40,34 @@ console.log(tomb)
 
 function stat()
 {
-    
+    var dizel = 0
+    var benzin = 0
+    var elektromos = 0
+    var ujrendszam = 0
+    var regirendszam = 0
+
+    document.getElementById("táblázat").style.display = "flex"
+    for(var i = 0;i<tomb.length;i++)
+    {
+        if(tomb.típus[i]==1)
+        {
+            benzin++
+        }
+        
+        if(tomb.típus[i]==2)
+        {
+            dizel++
+        }
+        
+        if(tomb.típus[i]==3)
+        {
+            elektromos++
+        }
+
+        document.getElementById("oksi1").innerHTML = benzin
+        
+        document.getElementById("oksi2").innerHTML = dizel
+        
+        document.getElementById("oksi3").innerHTML = elektromos
+    }
 }
