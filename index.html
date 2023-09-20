@@ -9,14 +9,22 @@
 <body>
 
 <p>Rendszáma <input type="text"></p>
-<p><select name="" id=""> 
-    <option value="" id="dizel">Dízel</option>
-    <option value="" id="benzin">Benzin</option>
-    <option value="" id="elektromos">Elektromos</option>
+<p><select name="" id="valaszt"> 
+    <option value="1" id="dizel">Dízel</option>
+    <option value="2" id="benzin">Benzin</option>
+    <option value="3" id="elektromos">Elektromos</option>
 </select>
 </p>
 
-<p onclick="elsotulaj()">Első tulajdonos <input type="checkbox" value="1" id=""></p>
+<p> <label for="csecs">Első tulajdonos</label><input type="checkbox" value="1" id="csecs"></p>
+<input type="radio" id="3ajto" name="ajtok" value="harmas">
+<label for="3ajto">3ajto</label>
+<input type="radio" id="5ajto" name="ajtok" value="oto">
+<label for="5ajto">5ajto</label>
+<p>
+<button onclick="Tárol()">Tárol</button> <button>Statisztika</button>
+</p>
+
 
 </body>
 </html>
