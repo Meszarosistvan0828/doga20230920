@@ -2,23 +2,26 @@ var tomb = []
 
 function Tárol()
 {
-    var tipus = ""
+    var rendszam = document.getElementById("rendszama").value 
+    var dizel = 0
+    var benzin = 0
+    var elektromos = 0
     if(document.getElementById("valaszt").value = 1)
     {
-        tipus = "dízel"
+        dizel+=1
     }
     if(document.getElementById("valaszt").value = 2)
     {
-        tipus = "benzin"
+      benzin+=1
     }  
     if(document.getElementById("valaszt").value = 3)
     {
-        tipus = "elektromos"
+       elektromos+=1
     }
     
     var haromajtos = 0
     var otajtos = 0
-    if(documen.getElementById("3ajto").checked)t
+    if(document.getElementById("3ajto").checked)
     {
         haromajtos++
     }
@@ -28,11 +31,23 @@ function Tárol()
     }
     
     var elsotulaj = 0
-    if(documen.getElementById("csecs").checked)t
+    if(document.getElementById("csecs").checked)
     {
-        haromajtos++
+        elsotulaj++
     }
     
-
+    var obj = [
+        {
+            rendszam : rendszam,
+            dizel : dizel,
+            benzin : benzin,
+            elektromos : elektromos,
+            elsotulaj : elsotulaj,
+            haromajtos : haromajtos,
+            otajtos : otajtos,
+        }
+    ]
+    tomb.push(obj)
+console.log(tomb)
 
 }
