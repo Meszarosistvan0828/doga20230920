@@ -1,0 +1,4 @@
+function elsotulaj()
+{
+    document.getElementById("")
+}
